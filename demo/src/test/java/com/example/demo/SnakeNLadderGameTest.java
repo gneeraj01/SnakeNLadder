@@ -24,9 +24,9 @@ import com.example.demo.strategy.RollingDice;
 public class SnakeNLadderGameTest {
 
 	private SnakeNLadderGame game;
-	List<Player> playerList;
-	SnakeBoard board;
-	RollingDice dice;
+	private List<Player> playerList;
+	private SnakeBoard board;
+	private RollingDice dice;
 
 	@BeforeEach
 	public void before() {

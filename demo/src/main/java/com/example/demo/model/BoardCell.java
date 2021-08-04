@@ -30,7 +30,10 @@ public class BoardCell {
 	}
   
 	  public int nextPos() {
-	        int nextPos = move.getNextPos();	       
+	        int nextPos = move.getNextPos();
+	        if (nextPos == 0) {
+	            return pos;
+	        }
 	        return nextPos;
 	    }
     

@@ -33,7 +33,7 @@ public class SnakeBoard {
         .findFirst();
         Integer newPos = currentPos;
         if(opNextPos.isPresent()) {
-        	newPos = opNextPos.get().getPos();
+        	newPos = opNextPos.get().nextPos();
         }
         return newPos;
     }
