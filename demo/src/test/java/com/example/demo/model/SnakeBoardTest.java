@@ -36,8 +36,8 @@ public class SnakeBoardTest {
 	@Test
 	@DisplayName("Test Position when snake is at 14 pos")
 	public void testGetPositionWhenSnakeIsAt14Pos() throws Exception {
-		board.getCells().set(7, new BoardCell(14, new Snake(1)));
-		int nextPosition = board.moveToNextPos(7, 1);
+		board.getCells().set(10, new BoardCell(14, new Snake(7)));
+		int nextPosition = board.moveToNextPos(13, 1);
 		assertEquals(7, nextPosition);
 	}
 
